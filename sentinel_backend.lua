@@ -1,11 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE MudletPackage>
-<MudletPackage version="1.001">
-	<ScriptPackage>
-		<Script isActive="yes" isFolder="no">
-			<name>sentinel_backend</name>
-			<packageName></packageName>
-			<script>local unpack = unpack or table.unpack
+local unpack = unpack or table.unpack
 
 sent_att = {}
 sent_att.__index = sent_att
@@ -607,8 +600,4 @@ end
     end
 		send("queue addclear eqbal "..table.concat(actions, self.settings.sep))
 		return table.concat(actions, self.settings.sep)
-	end</script>
-			<eventHandlerList />
-		</Script>
-	</ScriptPackage>
-</MudletPackage>
+	end
