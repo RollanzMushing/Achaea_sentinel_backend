@@ -1,13 +1,13 @@
 Sentinel backend documentation
 
-#The Goal
+# The Goal
 This project aims to simplify scripting sentinel class offensive by creating a class that translates attack choices into an Achaea command, freeing the user from having to worry about command syntax and order.
 
-#Important warning for people who aren't familiar with Lua inheritance
-*ONLY USE `sent_att` WHEN INVOKING THE `new` METHOD, SUCH AS `att = sent_att:new()`*
+# Important warning for people who aren't familiar with Lua inheritance
+**ONLY USE `sent_att` WHEN INVOKING THE `new` METHOD, SUCH AS `att = sent_att:new()`**
 All other methods should be invoked using the instance (`att` in the example above), not the template `sent_att`
 
-#The Template
+# The Template
 - The template for sentinel attacks is `sent_att`. This table contains all sorts of methods, dictionaries, and other fields you may need to construct an attack.
 - New instances are created using the `sent_att:new()` method
 - Generally balanceful actions are selected using `sent_att:act(<action name>, <array of additional arguments>)`
@@ -24,7 +24,7 @@ All other methods should be invoked using the instance (`att` in the example abo
 - Actual construction and sending of commands is done via `sent_att:commit()` method
 
 
-##Documentation to do:
+## Documentation todo:
 - script example
 - structure of sent_att
 - more detailed explanation of methods
